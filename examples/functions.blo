@@ -1,0 +1,25 @@
+// Creates a function called greetWorld wich prints "hello world" with the default visibility: public
+function greetWorld() {
+    print("hello world");
+}
+
+// Creates a function called greetWorld2 with the smaller prefix which prints "hello world" with the default visibility: public
+func greetWorld2() {
+    print("hello world");
+}  
+
+// Creates a function called greet with the argument of type string called name which prints "hello {name}" by a simple way with the visibility: read-only.
+<read> func greet(name->string) {
+    print("hello " + name);
+}
+
+// Creates a function called greet with the argument of type string called name which prints "hello {name}" by using inline variable addition with the visibiliy: private
+<private> func greet(name->string) {
+    print("hello <name>");
+}
+
+// Creates a function called returnGreets with the argument of type string called name which returns "hello {name}" by using inline variable addition with the visibility: private.
+<private> func returnGreets(name->string) -> string {
+    return "hello <name>";
+}
+
