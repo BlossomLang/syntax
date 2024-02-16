@@ -1,0 +1,16 @@
+// Will create a variable named myTestVar with the type string and the visibility public.
+<public> string myTestVar = "hello World"
+
+// Will create a variable named mySmallVar with the type int and the default visibility: public.
+int mySmallVar = 10;
+
+// Will create a variable named myOtherVar with the type int and the default visibility: public.
+int myOtherVar = 89;
+
+// Will create a variable named mySum with the type int and the default visibility: public. Will be equal to mySmallVar + myOtherVar.
+int mySum = mySmallVar + myOtherVar;
+
+// Creates an array containing those values as strings:
+array<string> stringArray =  [myTestVar, myOtherVar.string()];
+
+print(stringArray.string());
